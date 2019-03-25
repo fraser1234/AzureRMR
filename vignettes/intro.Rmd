@@ -20,7 +20,7 @@ As a general-purpose interface to Azure Resource Manager (ARM), you can use Azur
 - Create and delete resource groups (if you gave your service principal subscription-level access)
 
 
-## Authentication
+## Authenticatione
 
 Under the hood, AzureRMR uses a similar authentication process to the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest). The first time you authenticate with a given Azure Active Directory tenant, you call `create_azure_login()`, which will log you into Azure. R will prompt you for permission to create a special data directory in which to save your credentials. Once this information is saved on your machine, it can be retrieved in subsequent R sessions with `get_azure_login()`. Your credentials will be automatically refreshed so you don't have to reauthenticate.
 
